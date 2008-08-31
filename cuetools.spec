@@ -4,7 +4,7 @@ Name:		cuetools
 Version:	1.3.1
 Release:	1
 License:	GPL
-Group:		Applications
+Group:		Applications/Files
 Source0:	http://download.berlios.de/cuetools/%{name}-%{version}.tar.gz
 # Source0-md5:	45575f7a1bdc6615599fa6cb49845cca
 Patch0:		%{name}-flac.patch
@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -m755 extras/cuetag.sh $RPM_BUILD_ROOT/%{_bindir}/cuetag
+install -m755 extras/cuetag.sh $RPM_BUILD_ROOT%{_bindir}/cuetag
 
 %clean
 rm -rf $RPM_BUILD_ROOT
