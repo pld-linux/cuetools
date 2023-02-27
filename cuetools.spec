@@ -41,5 +41,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS TODO
-%attr(755,root,root) %{_bindir}/*
-%{_mandir}/man1/*
+%attr(755,root,root) %{_bindir}/cuebreakpoints
+%attr(755,root,root) %{_bindir}/cueconvert
+%attr(755,root,root) %{_bindir}/cueprint
+%attr(755,root,root) %{_bindir}/cuetag
+%{_mandir}/man1/cuebreakpoints.1*
+%{_mandir}/man1/cueconvert.1*
+%{_mandir}/man1/cueprint.1*
